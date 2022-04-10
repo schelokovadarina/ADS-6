@@ -2,14 +2,13 @@
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
 
-
 template<typename T, int size>
 class TPQueue {
-private:
-T arr[size] = { 0 };
-int first, last;
+ private:
+ T arr[size] = { 0 };
+ int first, last;
 
-public:
+ public:
 TPQueue() : first(0), last(0) {}
 void push(T temp) {
 int i = last++;
