@@ -11,10 +11,10 @@ int  first=0, last=0;
 public: TPQueue() :first{ 0 }, last{ 0 }  {};
 void push(T temp) {
 int i = last;
-while ((--i >= first) && (value.prior > a[i % size].prior)) {
-a[(i + 1) % size] = a[i % size];
+while ((--i >= first) && (value.prior > arr[i % size].prior)) {
+arr[(i + 1) % size] = arr[i % size];
 }
-a[(i + 1) % size] = value;
+arr[(i + 1) % size] = value;
 last++;
 }
 };
