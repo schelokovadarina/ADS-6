@@ -5,8 +5,9 @@
 template<typename T, int size>
 class TPQueue {
 private:
-T arr[size];
-itn first, last;
+T arr[size] = { 0 };
+int  first=0, last=0;
+
 public: TPQueue() :first{ 0 }, last{ 0 }  {};
 void push(T temp) {
 int i = last;
